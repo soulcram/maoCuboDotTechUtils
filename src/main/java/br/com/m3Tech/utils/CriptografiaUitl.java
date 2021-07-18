@@ -1,6 +1,6 @@
 package br.com.m3Tech.utils;
 
-import br.com.m3Tech.exception.BussinesException;
+import br.com.m3Tech.exception.UtilsException;
 
 public class CriptografiaUitl {
 
@@ -9,11 +9,11 @@ public class CriptografiaUitl {
 	private CriptografiaUitl() {
 	}
 
-	public static String encrypt(String s) throws BussinesException {
+	public static String encrypt(String s) throws UtilsException {
 		String retorno = "";
 		
 		if(s == null || "".equals(s)) {
-			throw new BussinesException("O campo senha n�o pode ser vazio");
+			throw new UtilsException("O campo senha n�o pode ser vazio");
 		}
 		
 		for(String item : getNovasPosicoes(s)) {
@@ -24,7 +24,7 @@ public class CriptografiaUitl {
 		return retorno;
 	}
 
-	public static String desencrypt(String s) throws BussinesException {
+	public static String desencrypt(String s) throws UtilsException {
 		String retorno = "";
 		String[] r = getDesencrytNovasPosicoes(s);
 		
@@ -36,7 +36,7 @@ public class CriptografiaUitl {
 		return retorno;
 	}
 
-	private static String[] getNovasPosicoes(String s) throws BussinesException {
+	private static String[] getNovasPosicoes(String s) throws UtilsException {
 		String nova = "";
 		for (String item : getPosicoes(s)) {
 
@@ -54,7 +54,7 @@ public class CriptografiaUitl {
 		return nova.split(";");
 	}
 	
-	private static String[] getDesencrytNovasPosicoes(String s) throws BussinesException {
+	private static String[] getDesencrytNovasPosicoes(String s) throws UtilsException {
 		String nova = "";
 		int[] d = {-5,5,-8,4};
 		int controle = 0;
@@ -78,7 +78,7 @@ public class CriptografiaUitl {
 		return nova.split(";");
 	}
 
-	private static String[] getPosicoes(String s) throws BussinesException {
+	private static String[] getPosicoes(String s) throws UtilsException {
 		String posicoes = "";
 
 		for (int i = 0; i < s.length(); i++) {
@@ -95,7 +95,7 @@ public class CriptografiaUitl {
 		String[] split = posicoes.split(";");
 
 		if (s.length() != split.length) {
-			throw new BussinesException("Senha inv�lida");
+			throw new UtilsException("Senha inv�lida");
 		}
 
 		return split;
