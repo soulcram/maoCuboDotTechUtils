@@ -74,4 +74,21 @@ public class StringUtils {
 		return Normalizer.normalize(value, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
 	}
 
+	public static boolean containsOnly(String s1, String s2) {
+		
+		for(char c : s1.toCharArray()) {
+			String s = String.valueOf(c);
+			if(!s2.contains(s)) {
+				return false;
+			}
+		}
+		
+		
+		return true;
+	}
+
+	public static boolean isNumeric(String s) {
+				return containsOnly(s, "0123456789");
+	}
+
 }
