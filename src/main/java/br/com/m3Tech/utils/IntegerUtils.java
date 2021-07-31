@@ -1,5 +1,8 @@
 package br.com.m3Tech.utils;
 
+import java.util.Random;
+import java.util.stream.IntStream;
+
 public class IntegerUtils {
 	
 	private IntegerUtils() {};
@@ -23,6 +26,20 @@ public class IntegerUtils {
 		}
 		
 		return valor;
+	}
+	
+	public static Integer random(Integer valorMin, Integer valorMax) {
+		
+		Random random = new Random();
+		
+		int nextInt = random.nextInt(valorMax);
+		
+		if(nextInt < valorMin) {
+			nextInt += valorMin;
+		}
+		
+		return nextInt;
+		
 	}
 
 

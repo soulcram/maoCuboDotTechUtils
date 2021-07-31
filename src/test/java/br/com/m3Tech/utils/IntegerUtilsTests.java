@@ -21,5 +21,15 @@ public class IntegerUtilsTests extends TestCase{
         assertTrue( IntegerUtils.zeroIfNull(nulo) == 0);
         assertTrue( IntegerUtils.zeroIfNull(naoNulo) == 10);
     }
+    
+    public void testarNumeroAleatorio11ate99() {
+    	Integer random = IntegerUtils.random(11, 99);
+    	
+    	for(int i = 0; i < 100; i++) {
+    	System.out.println(IntegerUtils.random(11, 99));
+    	}
+    	
+    	assertTrue( random > 10 && random < 100);
+    }
 
 }
