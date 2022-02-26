@@ -4,8 +4,8 @@ import br.com.m3Tech.exception.UtilsException;
 
 public class CriptografiaUitl {
 
-	private static final String SEQUENCIA = "!#$()*,;-.0123456789<>@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_abcdefghijklmnopqrstuvwxyz{|}:";
-	
+	private static final String SEQUENCIA = "!#$()*,;-.03k5Z7x8<@ABCDFTGHIJK}LMNdOPQRSU6VW2Y[]^_abcefgh1ijlmno>pq4rEstu9vwXyz{|:";
+		
 	private static final Integer MAX = SEQUENCIA.length();
 
 	private CriptografiaUitl() {
@@ -18,20 +18,15 @@ public class CriptografiaUitl {
 		Integer left = Integer.valueOf(random.toString().substring(0, 1));
 		Integer right = Integer.valueOf(random.toString().substring(1, 2));
 		
-		String retorno = random.toString();
+		String retorno = left.toString()+right.toString();
 		
 		if(StringUtils.isEmpty(s) ) {
 			throw new UtilsException("A String não pode ser vazio para criptografar");
 		}
 		
-		String[] novasPosicoes = getNovasPosicoes(s,left,right);
-		
-		for(String item : novasPosicoes) {
-			int pos = Integer.valueOf(item);
-			retorno += SEQUENCIA.substring(pos,pos+1);
-		}
-		
-		return retorno;
+		String novasPosicoes = getNovasPosicoes(s,left,-right);
+		//cwukfzdx
+		return retorno += novasPosicoes;
 	}
 
 	public static String desencrypt(String s) throws UtilsException {
@@ -41,42 +36,38 @@ public class CriptografiaUitl {
 			throw new UtilsException("Criptografia Inválida");
 		}
 		
-		String[] r = getDesencrytNovasPosicoes(s);
+		String r = getDesencrytNovasPosicoes(s);
 		
-		for(int i = 0; i < r.length;i += 2 ) {
-			Integer pos = Integer.valueOf(r[i]) - 2;
-			Integer posMais1 = Integer.valueOf(r[i + 1]) - 2;
+		for(int i = 0; i < r.length();i += 2 ) {
+			String pos = r.substring(i, i + 1);
+			String posMais1 = r.substring(i + 1, i + 2);
 			
-			if(pos < 0) {
-				pos = MAX - 1;
-				posMais1 = MAX - 1;
-			}
-			
-			if(!SEQUENCIA.substring(pos, pos + 1).equals(SEQUENCIA.substring(posMais1, posMais1 + 1))) {
+			if(!pos.equals(posMais1)) {
 				throw new UtilsException("Criptografia Inválida");
 			}
 			
-			retorno += SEQUENCIA.substring(pos, pos + 1);
+			retorno += pos;
 		}
 		
 		return retorno;
 	}
 
-	private static String[] getNovasPosicoes(String s, Integer left, Integer right) throws UtilsException {
+	private static String getNovasPosicoes(String s, Integer left, Integer right) throws UtilsException {
 		String nova = "";
-		for (String item : getPosicoes(s)) {
-
-			int soma = Integer.valueOf(item) + left;
-			nova += (soma > MAX ? soma - MAX : soma) + ":";
-			soma = Integer.valueOf(item) - right;
-			nova += (soma < 0 ? soma + MAX : soma) + ":";
+		
+		String[] posicoes = getPosicoes(s);
+		
+		for (String item : posicoes) {
+			
+			nova += getCharSequence(Integer.valueOf(item),left);
+			nova += getCharSequence(Integer.valueOf(item),right);
 
 		}
 
-		return nova.split(":");
+		return nova;
 	}
 	
-	private static String[] getDesencrytNovasPosicoes(String s) throws UtilsException {
+	private static String getDesencrytNovasPosicoes(String s) throws UtilsException {
 		String nova = "";
 
 		Integer left = Integer.valueOf(s.substring(0, 1));
@@ -90,15 +81,8 @@ public class CriptografiaUitl {
 		String[] posicoes = getPosicoes(hash);
 		
 		for (String item : posicoes) {
-
-			int soma = Integer.valueOf(item) + d[controle++];
-			if(soma > MAX) {
-				nova += (soma - MAX) + ":";
-			}else if(soma < 0) {
-				nova += (soma + MAX) + ":";
-			}else {
-				nova += soma + ":";
-			}
+			
+			nova += getCharSequence(Integer.valueOf(item),d[controle++]);
 			
 			if(controle >= d.length) {
 				controle = 0;
@@ -106,7 +90,34 @@ public class CriptografiaUitl {
 
 		}
 
-		return nova.split(":");
+		return nova;
+	}
+	
+	private static String getCharSequence(int posIni, int quant) {
+		
+		int iterator = quant > 0 ? 1 : -1;
+		
+		if(quant < 0) {
+			quant *= -1;
+		}
+		
+		int repetidor = 1;
+		
+		for(int i = posIni;; ) {
+			
+			i += iterator;
+			
+			 if(i > MAX - 1) {
+				 i = 0;
+			 }else if(i < 0) {
+				 i = MAX - 1;
+			 }
+			 
+			 if(repetidor++ == quant) {
+					return SEQUENCIA.substring(i, i + 1);
+				}
+		}
+		
 	}
 
 	private static String[] getPosicoes(String s) throws UtilsException {
@@ -119,7 +130,7 @@ public class CriptografiaUitl {
 				String stringNaLista = SEQUENCIA.substring(y, y + 1);
 
 				if (stringOriginal.equals(stringNaLista)) {
-					posicoes += (y + 1) + ":";
+					posicoes += y  + ":";
 					break;
 				}
 

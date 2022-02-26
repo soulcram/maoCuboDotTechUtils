@@ -5,6 +5,19 @@ import junit.framework.TestCase;
 
 public class CriptografiaUtilsTests extends TestCase{
 
+    public void testarExtremidade() throws UtilsException{
+    	
+    	String hash = "}!";
+    	
+    	String encrypt = CriptografiaUitl.encrypt(hash);
+    	
+    	System.out.println(encrypt);
+
+    	String desencrypt = CriptografiaUitl.desencrypt(encrypt);
+
+        System.out.println(desencrypt);
+        assertTrue(desencrypt.equals(hash));
+    }
 	
     public void testarCriptografiaSenha() throws UtilsException{
     	
