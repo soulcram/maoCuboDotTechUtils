@@ -12,11 +12,9 @@ public class CriptografiaUitl {
 	}
 
 	public static String encrypt(String s) throws UtilsException {
-		
-		Integer random = IntegerUtils.random(11, 99);
-		
-		Integer left = Integer.valueOf(random.toString().substring(0, 1));
-		Integer right = Integer.valueOf(random.toString().substring(1, 2));
+						
+		Integer left = IntegerUtils.random(1, 9);
+		Integer right = IntegerUtils.random(1, 9);
 		
 		String retorno = left.toString()+right.toString();
 		

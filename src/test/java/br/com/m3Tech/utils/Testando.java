@@ -9,12 +9,21 @@ public class Testando {
 
 	public static void main(String[] args) throws UtilsException {
 		
+		try {
+		
+		for(int i = 0 ; i < 1000; i++) {
 
-		String encrypt = CriptografiaUitl.encrypt(":pa!");
-		
-		System.out.println(encrypt);
-		
-		System.out.println(CriptografiaUitl.desencrypt(encrypt));
+			System.out.println(i);
+			
+			String encrypt = CriptografiaUitl.encrypt("admin");
+			
+			System.out.println(encrypt);
+			
+			System.out.println(CriptografiaUitl.desencrypt(encrypt));
+		}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
 	}
 	
 

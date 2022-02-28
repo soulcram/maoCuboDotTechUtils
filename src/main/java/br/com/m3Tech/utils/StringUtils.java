@@ -44,7 +44,7 @@ public class StringUtils {
 		return false;
 	}
 	
-	public static boolean EmptyOrNull(String valor) {
+	public static boolean emptyOrNull(String valor) {
 		return valor == null || "".equals(valor);
 		
 	}
