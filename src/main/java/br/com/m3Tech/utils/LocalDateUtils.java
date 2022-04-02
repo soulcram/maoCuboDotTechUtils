@@ -97,6 +97,17 @@ public class LocalDateUtils {
 			return false;
 		}
 	}
+	
+	public static LocalDate getLocalDate(String valor) {
+
+		String[] split = valor.split(" ");
+		
+		if(split.length > 1) {
+			return LocalDate.parse(split[0]);
+		}
+		
+		return LocalDate.parse(valor);
+	}
 
 
 }
