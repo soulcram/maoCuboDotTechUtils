@@ -10,6 +10,10 @@ public class BigDecimalUtils {
 		return valor == null;
 	}
 	
+	public static boolean isNullOrZero(BigDecimal valor) {
+		return valor == null || valor.compareTo(BigDecimal.ZERO) == 0;
+	}
+	
 	public static BigDecimal ifNullThenZero(BigDecimal valor) {
 		
 		if(isNull(valor)) {
