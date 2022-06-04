@@ -1,7 +1,6 @@
 package br.com.m3Tech.utils;
 
 import java.util.Random;
-import java.util.stream.IntStream;
 
 public class IntegerUtils {
 	
@@ -14,6 +13,14 @@ public class IntegerUtils {
 	
 	public static boolean isNull(Integer valor) {
 		if(valor == null) {
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public static boolean isZeroOrNull(Integer valor) {
+		if(valor == null || valor.equals(0)) {
 			return true;
 		}
 		
