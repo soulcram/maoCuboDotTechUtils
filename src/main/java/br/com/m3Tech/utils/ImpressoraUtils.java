@@ -1,20 +1,13 @@
 package br.com.m3Tech.utils;
 
-import java.awt.print.PrinterJob;
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.math.BigDecimal;
-
-import javax.print.Doc;
-import javax.print.DocFlavor;
-import javax.print.DocPrintJob;
-import javax.print.PrintException;
-import javax.print.PrintService;
-import javax.print.SimpleDoc;
+import javax.print.*;
 import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.standard.JobName;
 import javax.print.attribute.standard.OrientationRequested;
+import java.awt.print.PrinterJob;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class ImpressoraUtils {
 	

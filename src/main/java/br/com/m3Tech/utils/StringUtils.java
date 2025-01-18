@@ -3,6 +3,7 @@ package br.com.m3Tech.utils;
 import java.math.BigDecimal;
 import java.text.Normalizer;
 import java.text.NumberFormat;
+import java.util.regex.Pattern;
 
 public class StringUtils {
 
@@ -103,4 +104,33 @@ public class StringUtils {
 		return containsOnly(s, "0123456789");
 	}
 
+	public static boolean endsWith(String valor, String caracter) {
+		if(valor == null || caracter == null){
+			return false;
+		}
+
+		return caracter.equals(valor.substring(valor.length() -1));
+	}
+
+	public static String remove(String valor, String caracter) {
+		if(valor == null){
+			return "";
+		}
+		if(caracter == null){
+			return valor;
+		}
+		return valor.replaceAll(Pattern.quote(caracter),"");
+	}
+
+	public static String removeEnd(String valor, String caracter) {
+		if(valor == null){
+			return "";
+		}
+		if(caracter == null || !endsWith(valor,caracter)){
+			return valor;
+		}
+
+		return valor.substring(0,valor.length() - 1);
+
+	}
 }
