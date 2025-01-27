@@ -49,7 +49,7 @@ public class StringUtils {
 	}
 
 	public static boolean emptyOrNull(String valor) {
-		return valor == null || "".equals(valor);
+		return valor == null || isBlank(valor);
 
 	}
 
