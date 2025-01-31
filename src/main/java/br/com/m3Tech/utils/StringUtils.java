@@ -53,6 +53,16 @@ public class StringUtils {
 
 	}
 
+	public static boolean allEmptyOrNull(String ...valores) {
+		for(String v : valores){
+			if(!emptyOrNull(v)){
+				return false;
+			}
+		}
+		return true;
+
+	}
+
 	public static String limite(String nome, int i) {
 		if (nome.length() > i) {
 			return nome.substring(0, i - 1);
