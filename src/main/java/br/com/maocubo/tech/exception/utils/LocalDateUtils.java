@@ -1,4 +1,4 @@
-package br.com.maocubo.utils;
+package br.com.maocubo.tech.exception.utils;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

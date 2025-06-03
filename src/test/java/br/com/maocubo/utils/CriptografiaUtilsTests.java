@@ -1,6 +1,7 @@
 package br.com.maocubo.utils;
 
-import br.com.maocubo.exception.UtilsException;
+import br.com.maocubo.tech.exception.UtilsException;
+import br.com.maocubo.tech.exception.utils.CriptografiaUitl;
 import junit.framework.TestCase;
 
 public class CriptografiaUtilsTests extends TestCase{

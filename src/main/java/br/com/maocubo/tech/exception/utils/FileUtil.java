@@ -1,7 +1,7 @@
-package br.com.maocubo.utils;
+package br.com.maocubo.tech.exception.utils;
 
-import br.com.maocubo.exception.DataInvalidaException;
-import br.com.maocubo.exception.NumeroInvalidoException;
+import br.com.maocubo.tech.exception.DataInvalidaException;
+import br.com.maocubo.tech.exception.NumeroInvalidoException;
 
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;

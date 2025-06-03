@@ -1,4 +1,4 @@
-package br.com.maocubo.utils;
+package br.com.maocubo.tech.exception.utils;
 
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;

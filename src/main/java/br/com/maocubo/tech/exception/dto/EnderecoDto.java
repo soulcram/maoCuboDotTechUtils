@@ -1,4 +1,4 @@
-package br.com.maocubo.dto;
+package br.com.maocubo.tech.exception.dto;
 
 public class EnderecoDto {
 	

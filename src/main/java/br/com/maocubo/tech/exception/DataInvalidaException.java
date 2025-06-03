@@ -1,4 +1,4 @@
-package br.com.maocubo.exception;
+package br.com.maocubo.tech.exception;
 
 public class DataInvalidaException extends Exception {
 	

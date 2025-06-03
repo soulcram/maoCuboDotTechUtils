@@ -1,6 +1,6 @@
-package br.com.maocubo.utils;
+package br.com.maocubo.tech.exception.utils;
 
-import br.com.maocubo.exception.UtilsException;
+import br.com.maocubo.tech.exception.UtilsException;
 
 public class CriptografiaUitl {
 
