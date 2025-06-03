@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e8c8cd2-fee4-45fc-9cb0-592fe7d6c1b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/dto/EnderecoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/dto/EnderecoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/exception/DataInvalidaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/exception/DataInvalidaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/exception/NumeroInvalidoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/exception/NumeroInvalidoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/exception/UtilsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/exception/UtilsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/BigDecimalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/BigDecimalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/BooleanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/BooleanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/CepUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/CepUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/CollectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/CollectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/CriptografiaUitl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/CriptografiaUitl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/EmailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/EmailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/HashUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/ImpressoraUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/ImpressoraUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/IntegerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/IntegerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/LocalDateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/LocalDateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/NumericUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/NumericUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/m3Tech/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/maocubo/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/BigDecimalUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/BigDecimalUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/CriptografiaUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/CriptografiaUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/IntegerUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/IntegerUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/LocalDateUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/LocalDateUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/StringUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/StringUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/m3Tech/utils/Testando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/Testando.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2y10YrU3314Rvad3TFD6RGw72VM" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="maoCuboDotTechUtils" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="maoCuboDotTechUtils" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e8c8cd2-fee4-45fc-9cb0-592fe7d6c1b6" name="Changes" comment="" />
+      <created>1748986823187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748986823187</updated>
+      <workItem from="1748986824298" duration="81000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
