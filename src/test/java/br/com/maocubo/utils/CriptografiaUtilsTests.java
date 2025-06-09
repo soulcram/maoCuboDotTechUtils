@@ -1,12 +1,12 @@
 package br.com.maocubo.utils;
 
 import br.com.maocubo.tech.exception.UtilsException;
-import br.com.maocubo.tech.exception.utils.CriptografiaUitl;
+import br.com.maocubo.tech.utils.CriptografiaUitl;
 import junit.framework.TestCase;
 
 public class CriptografiaUtilsTests extends TestCase{
 
-    public void testarExtremidade() throws UtilsException{
+    public void testarExtremidade() throws UtilsException {
     	
     	String hash = "}!";
     	

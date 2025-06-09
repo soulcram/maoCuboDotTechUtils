@@ -1,6 +1,6 @@
 package br.com.maocubo.utils;
 
-import br.com.maocubo.tech.exception.utils.StringUtils;
+import br.com.maocubo.tech.utils.StringUtils;
 import junit.framework.TestCase;
 
 public class StringUtilsTests extends TestCase{

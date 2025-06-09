@@ -1,6 +1,6 @@
 package br.com.maocubo.utils;
 
-import br.com.maocubo.tech.exception.utils.IntegerUtils;
+import br.com.maocubo.tech.utils.IntegerUtils;
 import junit.framework.TestCase;
 
 public class IntegerUtilsTests extends TestCase{

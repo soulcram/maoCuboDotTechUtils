@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e8c8cd2-fee4-45fc-9cb0-592fe7d6c1b6" name="Changes" comment="Renomeando" />
+    <list default="true" id="9e8c8cd2-fee4-45fc-9cb0-592fe7d6c1b6" name="Changes" comment="Renomeando">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/BigDecimalUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/BigDecimalUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/CriptografiaUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/CriptografiaUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/IntegerUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/IntegerUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/StringUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/StringUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/Testando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/maocubo/utils/Testando.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748986823187</updated>
-      <workItem from="1748986824298" duration="2075000" />
+      <workItem from="1748986824298" duration="2761000" />
     </task>
     <task id="LOCAL-00001" summary="Renomeando projeto">
       <option name="closed" value="true" />
@@ -112,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748989378827</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Renomeando">
+      <option name="closed" value="true" />
+      <created>1748989555725</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748989555725</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

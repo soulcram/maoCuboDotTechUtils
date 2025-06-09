@@ -2,7 +2,7 @@ package br.com.maocubo.utils;
 
 import java.math.BigDecimal;
 
-import br.com.maocubo.tech.exception.utils.BigDecimalUtils;
+import br.com.maocubo.tech.utils.BigDecimalUtils;
 import junit.framework.TestCase;
 
 public class BigDecimalUtilsTests extends TestCase{

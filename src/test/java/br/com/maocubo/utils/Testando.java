@@ -1,6 +1,6 @@
 //package br.com.maocubo.utils;
 //
-//import br.com.maocubo.tech.exception.UtilsException;
+//import br.com.maocubo.tech.utilsException;
 //
 //public class Testando {
 //	
